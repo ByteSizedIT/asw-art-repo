@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 import NavBarLinks from "./NavBarLinks";
+import Burger from "./Burger";
 
 const Navbar = () => {
   const router = useRouter();
@@ -22,6 +23,7 @@ const Navbar = () => {
         priority
       />
       <NavBarLinks />
+      <Burger />
     </nav>
   );
 };
