@@ -12,21 +12,21 @@ const NavBarLinks = () => {
   return (
     <div className="hidden md:flex items-center gap-10 z-10">
       <Link
-        href="/about"
-        className={`${
-          path === "/about" ? "text-black" : "text-gray-500"
-        } hover:text-black`}
-      >
-        ABOUT
-      </Link>
-
-      <Link
         href="/"
         className={`${
           path === "/" ? "text-black" : "text-gray-500"
         } hover:text-black`}
       >
         GALLERY
+      </Link>
+
+      <Link
+        href="/about"
+        className={`${
+          path === "/about" ? "text-black" : "text-gray-500"
+        } hover:text-black`}
+      >
+        ABOUT
       </Link>
 
       {/* TODO: Make upload link conditional to admin.authState === true */}
